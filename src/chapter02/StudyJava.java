@@ -10,12 +10,12 @@ package chapter02;
  * @author dydej
  */
 public class StudyJava {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        /*주석박스 간단하쥬?*/
+        System.out.println("첫 번째 자바 프로그램이다.");
+        System.out.println("주석을 사용했다!");
+        System.out.println("만입도 사용했다!");
+        System.out.println("앞쪽은 넘어가야겠다..");
     }
     
 }
