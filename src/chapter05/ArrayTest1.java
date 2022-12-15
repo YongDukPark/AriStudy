@@ -13,8 +13,6 @@ public class ArrayTest1 {
         for(int i = 0 ; i < subject.length ; i++){
             total += subject[i];
         }
-        
         System.out.println(total);
-        
     }
 }
