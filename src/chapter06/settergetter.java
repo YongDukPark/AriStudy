@@ -6,7 +6,7 @@
 package chapter06;
 
 class testtest{
-    private String testtest;
+    String testtest;
     
     public void setTest(String testtest){
         this.testtest = testtest;
@@ -21,8 +21,9 @@ class testtest{
 public class settergetter {
     public static void main(String[] args) {
         testtest tt = new testtest();
-        tt.setTest("으악 오늘 쉬는날이었다니");
-        
+        //tt.setTest("으악 오늘 쉬는날이었다니");
+        tt.testtest = "으악 오늘 쉬는날이었다니";
+                
         System.out.println(tt.getTest());
         
     }
