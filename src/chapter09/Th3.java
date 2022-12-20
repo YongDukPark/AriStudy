@@ -9,12 +9,12 @@ public class Th3 implements Runnable{
     public void run() {
         //이 for문은 단순한 시간 지연용
         for(int i=1 ; i<21 ; i++){
-            System.out.println(Thread.currentThread().getName() + " ");
+            System.out.print(Thread.currentThread().getName() + " ");
+            for(int j = 1 ; j < 10000000 ; j++);
         }
     }
     public static void main(String[] args) {
         Th3 t = new Th3();
-        
         
         Thread one = new Thread(t, "P01");
         //이녀석을 통해서 우선순위를 정해준다.
