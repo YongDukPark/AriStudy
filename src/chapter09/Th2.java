@@ -15,6 +15,9 @@ public class Th2 implements Runnable{
     }
     
     public static void main(String[] args){
+        
+        //자기 자신 자체를 가져온다 상속되어있는 인터페이스를 사용하기 위해
+        //클래스는 상속이 한마리밖에 안되나 인터페이스는 많이많이 할수있어서 ㅎ 인터페이스 상속을 주로한다.
         Th2 tm = new Th2();
         
         Thread t = new Thread(tm);
@@ -24,5 +27,6 @@ public class Th2 implements Runnable{
             System.out.println("main : " + i);
         }
     }
+    
     
 }
