@@ -18,11 +18,13 @@ public class ButtonEvent {
                 System.exit(0);
             }
         });
-
+        //버튼 생성
         Button okButton = new Button("OK");
+        //okButton에 actionListener기능을 넣어준다. 밑에 인스턴스가 실행되게
         okButton.addActionListener(new OkButtonEventHandler());
         
         frame.setLayout(new FlowLayout());
+        //버튼 add해주기
         frame.add(okButton);
         
         frame.setSize(200,100);
@@ -31,16 +33,13 @@ public class ButtonEvent {
     class OkButtonEventHandler implements ActionListener{
         //@Override
         public void actionPerformed(ActionEvent e) {
-            System.out.println("버튼을 눌렀습니다.");
-            System.out.println("1222");
+            System.out.println("buttonClick");
         }
 
     }
     
     public static void main(String[] args) {
         ButtonEvent be = new ButtonEvent();
-        
-        System.out.println("test");
     }
 }
 
