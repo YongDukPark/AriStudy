@@ -22,6 +22,7 @@ public class TextFieldTest {
         
         TextField id = new TextField(10);
         TextField pwd = new TextField(10);
+        pwd.setEchoChar('*');
         
         f.add(lid);
         f.add(id);
