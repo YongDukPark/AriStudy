@@ -31,17 +31,19 @@ public class RightClick extends MouseAdapter{
 
     @Override
     public void mousePressed(MouseEvent me) {
-        //ê·¸ë˜ ì´ê±° ê¸°ì–µë‚¬ë‹¤ ì´ëŸ°ì‹ìœ¼ë¡œ ì´ìƒí•œ ì´ë¦„ìœ¼ë¡œ ë˜ì–´ìˆì—ˆë‹¤.
+        //±×·¡ ÀÌ°Å ±â¾ï³µ´Ù ÀÌ·±½ÄÀ¸·Î ÀÌ»óÇÑ ÀÌ¸§À¸·Î µÇ¾îÀÖ¾ú´Ù.
         if(me.getModifiers() == me.BUTTON3_MASK){
-            textField.setText("ì˜¤ë¥¸ìª½ ë§ˆìš°ìŠ¤ ë²„íŠ¼ í´ë¦­");
+            
+            textField.setText(new String("¿À¸¥ÂÊ ¸¶¿ì½º ¹öÆ° Å¬¸¯"));
+            
             System.out.println(me.getModifiers());
-            //4ì¶œë ¥ me.BUTTON3_MASKë„ 4ê°€ ì¶œë ¥ëœë‹¤ 4=4 ì´ë¯€ë¡œ ì´ìª½ ì¡°ê±´ë¬¸ì— ë“¤ì–´ì˜¨ë‹¤.
+            //4Ãâ·Â me.BUTTON3_MASKµµ 4°¡ Ãâ·ÂµÈ´Ù 4=4 ÀÌ¹Ç·Î ÀÌÂÊ Á¶°Ç¹®¿¡ µé¾î¿Â´Ù.
             System.out.println(me.BUTTON3_MASK);
             
         } else if(me.getModifiers() == me.BUTTON1_MASK){
-            textField.setText("ì™¼ìª½ ë§ˆìš°ìŠ¤ ë²„íŠ¼ í´ë¦­");
+            textField.setText("¿ŞÂÊ ¸¶¿ì½º ¹öÆ° Å¬¸¯");
             System.out.println(me.getModifiers());
-            //16ì¶œë ¥
+            //16Ãâ·Â
         }
     }
     
