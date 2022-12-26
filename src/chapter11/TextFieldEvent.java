@@ -36,6 +36,7 @@ public class TextFieldEvent implements ActionListener{
         frame.setVisible(true);
     }
     
+    @Override
     public void actionPerformed(ActionEvent ae){
         String inputString = nameField.getText();
         nameField.setText("");
