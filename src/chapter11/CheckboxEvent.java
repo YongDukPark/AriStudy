@@ -35,9 +35,9 @@ public class CheckboxEvent implements ItemListener{
         cbPink = new Checkbox("Pink", cbGroup, false);
         
         //이벤트 발생시 실행
-        //cbYellow.addItemListener(this);
-        //cbGreen.addItemListener(this);
-        //cbPink.addItemListener(this);
+        cbYellow.addItemListener(this);
+        cbGreen.addItemListener(this);
+        cbPink.addItemListener(this);
         
         //판넬
         Panel pn = new Panel();
