@@ -23,19 +23,14 @@ public class InetAddressTest {
             for(int i = 0 ; i < addrArr.length ; i++){
                 System.out.println("IP목록[" + i + "] : " + addrArr[i]);
             }
-            
             System.out.println("");
             
             addr = InetAddress.getLocalHost();
             System.out.println("로컬 호스트 도메인명 : " + addr.getHostName());
             System.out.println("로컬 호스트 IP 주소 : " + addr.getHostAddress());
             System.out.println("");
-            
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
-        
-        
     }
 }
