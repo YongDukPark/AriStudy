@@ -14,6 +14,8 @@ public class UrlTest2 {
             URL page = new URL("http://docs.oracle.com/javase/"
                     + "tutorial/essential/index.html");
             
+            //openStream 메소드는 지정된 URL로부터 바이트 단위로 읽는
+            //스트림 객체를 반환한다.
             InputStream is = page.openStream();
             InputStreamReader isr = new InputStreamReader(is);
             BufferedReader br = new BufferedReader(isr);
