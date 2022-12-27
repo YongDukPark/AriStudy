@@ -5,12 +5,12 @@ import java.net.URL;
 public class UrlTest1 {
     public static void main(String[] args) {
         try {
-            URL url = new URL("http://www.oracle.com/technetwork/java/index.html");
+            URL url = new URL("https://www.oracle.com/technetwork/java/index.html");
             
             //호스트 이름과 포트를 문자열로 반환
             System.out.println("getAuthority() : " + url.getAuthority());
-            //url의 content객체 반환    이친구는 문제가 있다 밑에는 다 잘나옴
-            //System.out.println("getContent() : " + url.getContent());
+            //url의 content객체 반환    이친구는 문제가 있다 밑에는 다 잘나옴 프로토콜 https로 변경 해결
+            System.out.println("getContent() : " + url.getContent());
             //기본 포트 반환 http는 80임
             System.out.println("getDefaultPort() : " + url.getDefaultPort());
             //포트를 반환 설정 없으면 -1 반환
