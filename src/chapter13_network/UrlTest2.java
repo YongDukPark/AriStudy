@@ -11,7 +11,7 @@ import java.net.URL;
 public class UrlTest2 {
     public static void main(String[] args) {
         try {
-            URL page = new URL("http://docs.oracle.com/javase/"
+            URL page = new URL("https://docs.oracle.com/javase/"
                     + "tutorial/essential/index.html");
             
             //openStream 메소드는 지정된 URL로부터 바이트 단위로 읽는
