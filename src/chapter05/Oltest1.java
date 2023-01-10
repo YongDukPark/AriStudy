@@ -37,6 +37,22 @@ public class Oltest1 {
     public static void main(String[] args) {
         OverLoding1 olt1 = new OverLoding1();
         
+        String a = "0";
+        String b = "0";
+        int a_a = 0;
+        int b_b = 0;
+        
+        a_a = Integer.parseInt(a)/10;
+        b_b = Integer.parseInt(b)/10;
+        
+        System.out.println(a_a);
+        System.out.println(b_b);
+        
+        if(a == b ){
+            System.out.println("5000");
+        }
+        
+        
         olt1.addition(8, 9);
         olt1.addition(4.1F, 5.5F);
         olt1.addition(6.29, 10.26);
